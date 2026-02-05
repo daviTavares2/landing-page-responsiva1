@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria - Campos do Jordão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-meatz sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            SUA LOGO
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style="font-family: 'Roboto',sans-serif;;" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre">QUEM SOMOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cardapio">CARDÁPIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#unidades">LOCAL</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
+            </ul>
+
+            <div style="display : grid;justify-content: center; " class="d-flex align-items-center">
+                <a href="#ifood" class="btn-delivery-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bicycle me-2" viewBox="0 0 16 16">
+                        <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1h-1.07l1.1 2.312c.314.659.813 1.2 1.42 1.613l1.583 1.055a.5.5 0 0 1-.555.832l-1.582-1.055a4.2 4.2 0 0 1-1.89-2.526L3.922 5H3.5a.5.5 0 0 1-.5-.5M5.857 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4.286 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                        <path d="M4.5 13a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7m0-1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m11-2a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0"/>
+                    </svg>
+                    PEDIR AGORA
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="/images/peça agora.png" class="d-block w-100"></div>
+            <div class="carousel-item"><img src="/images/2.png" class="d-block w-100"></div>
+            <div class="carousel-item"><img src="./images/Delicioso hamburger.png" class="d-block w-100"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+
+    <div  class="container text-center py-5 scroll-reveal">
+        <a  style="font-family: 'Alfa Slab On', sans-serif;" class="btn-pede-agora">
+            FAZER PEDIDO AGORA
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart-fill ms-2" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+        </a>
+    </div>
+    
+    <div class="container my-5 text-center">
+        <h1  id="cardapio" class="display-4 fw-bold mb-5 scroll-reveal" style=" font-family: 'Alfa Slab One',sans-serif; color: #4E2A1E;">CARDÁPIO</h1>
+        <div class="row g-4">
+            <div class="col-6 col-md-3 scroll-reveal">
+                <div class="card custom-card h-100">
+                    <div class="card-img-top-bg"><img src="./cardapiofotos/xbacon-removebg-preview.png" class="img-fluid"></div>
+                    <div class="card-body"><h5 style="font-family: 'Roboto',sans-serif;   color: #4A1D11;" class="card-title">BACON</h5></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 scroll-reveal">
+                <div class="card custom-card h-100">
+                    <div class="card-img-top-bg"><img src="./cardapiofotos/CHEESEBURGUER-1000x1000-removebg-preview.png" class="img-fluid"></div>
+                    <div class="card-body"><h5 style="font-family: 'Roboto',sans-serif;   color: #4A1D11;" class="card-title">CHEESE</h5></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 scroll-reveal">
+                <div class="card custom-card h-100">
+                    <div class="card-img-top-bg"><img src="./cardapiofotos/34_55c2ab9b72a92-removebg-preview.png" class="img-fluid"></div>
+                    <div class="card-body">
+                        <h5 style="font-family: 'Roboto',sans-serif;   color: #4A1D11;" class="card-title">SALADA</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 scroll-reveal">
+                <div class="card custom-card h-100">
+                    <div class="card-img-top-bg"><img src="./cardapiofotos/batata_frita_destaque_ilustrativo_zona_sul-removebg-preview.png" class="img-fluid"></div>
+                    <div class="card-body">
+                        <h5 style="font-family: 'Roboto',sans-serif;   color: #4A1D11;" class="card-title">BATATA FRITA</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="cta-section scroll-reveal">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-start gap-4">
+            <p style=" font-family:'Roboto', sans-serif;; color: #4A1D11;" class="cta-text">Acesse o cardápio online e faça seu pedido agora.</p>
+            <a href="#" class="btn btn-dark-custom d-flex align-items-center gap-2">
+                <img id="ifood" style="color: #F29235; height: 15px;" src="./cardapiofotos/ifood-43.svg"> IFOOD
+            </a>
+        </div>
+    </div>
+</section>
+
+    <div class="container my-5">
+        <div class="card card-custom bg-meatz p-4 shadow-lg scroll-reveal">
+            <div class="row align-items-center">
+                <div class="col-md-5 img-container"><img src="./images/quemsomos.jpg" class="img-fluid"></div>
+                <div class="col-md-7 texto-container">
+                    <h1 id="sobre" style="font-family: 'Alfa Slab One',sans-serif;" class="titulo-secao">Quem Somos</h1>
+                    <p style="font-family: 'Roboto',sans-serif;" class="paragrafo-meatz">Nossos primeiros passos foram em 2015, dentro de um trailer em Brasília...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="secao-videos-black py-5" style="background-color: #000;">
+        <div class="container text-center">
+            <h2   style="font-family: 'Alfa Slab One',sans-serif;" class="display-5 section-title-orange mb-4 scroll-reveal">NOSSOS CONTEUDOS</h2> 
+            <div class="row g-3">
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (1).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (2).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (3).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (4).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (5).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (6).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download (7).mp4"></video></div></div>
+                <div class="col-6 col-md-3 scroll-reveal"><div class="video-grid-item"><video controls><source src="videos/Download.mp4"></video></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div style="font-family: 'Roboto',sans-serif;"class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="row g-4">
+                    <div class="col-12 scroll-reveal">
+                        <div  class="card contact-card p-4 shadow">
+                            <h3 >Dúvidas e reservas</h3>
+                            <div class="contact-info-item"><span>(12) 99618-5326</span></div>
+                            <div class="contact-info-item"><span>hamburgueriacontainercj@gmail.com</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 scroll-reveal">
+                        <div class="card contact-card p-4 shadow">
+                            <h3>Funcionamento</h3>
+                            <div class="contact-info-item"><span>Domingo a quinta das 18h às 23h30</span></div>
+                            <div class="contact-info-item"><span>Sexta a sábado das 18h às 00h</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 scroll-reveal">
+                <div class="card contact-card p-4 shadow h-100">
+                    <h3>Como chegar</h3>
+                    <div class="contact-info-item"><span>R. Orivaldo Lima Cardoso, 141, Loja 05</span></div>
+                    <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=SUA_URL_DO_MAPA_AQUI" width="100%" height="250" style="border:0;" loading="lazy"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer style="font-family: 'Roboto',sans-serif;"class="footer-meatz py-5" id="contato">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-logo-placeholder mb-4">
+                    <h2 class="fw-bold m-0" style="color: #4A1D11;">Logo</h2>
+                    <small class="fw-bold"></small>
+                </div>
+                <div class="footer-social-icons d-flex gap-2">
+                    <a href="#" class="social-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+                    <a href="#" class="social-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">SOBRE</h4>
+                <p class="footer-text">O Simples da Melhor Forma.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">ACESSO RÁPIDO</h4>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#ifood">iFood</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-title">CONTATOS</h4>
+                <p class="footer-text">R. Orivaldo Lima Cardoso, 141<br>(12) 99618-5326</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
