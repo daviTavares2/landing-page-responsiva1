@@ -1,0 +1,328 @@
+/* ============================================================
+   1. VARIÁVEIS E CONFIGURAÇÕES BASE
+   ============================================================ */
+:root {
+    --laranja-meatz: #F29235;
+    --amarelo-dourado: #F9A825;
+    --bege-claro: #FFF8E1;
+    --creme-card: #F8F1E7;
+    --marrom-texto: #4A1D11;
+    --preto-puro: #000000;
+    --preto-suave: #1a1a1a;
+    --espacamento-secao: 50px; 
+}
+
+body {
+    background-color: var(--bege-claro); /* AJUSTADO: Fundo agora é Bege */
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Padronização de Espaçamento Global */
+section, 
+.container-secao,
+.secao-videos-black,
+.my-5,
+.cta-section {
+    padding-top: var(--espacamento-secao) !important;
+    padding-bottom: var(--espacamento-secao) !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* ============================================================
+   2. NAVEGAÇÃO E BARRA SUPERIOR
+   ============================================================ */
+/* Configurações Gerais do Navbar */
+.navbar-meatz {
+    background-color: #FDF5E6; /* Cor bege clarinha do fundo */
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo-img {
+    height: 60px; /* Ajuste conforme o tamanho da sua logo */
+}
+
+/* Links do Menu */
+.navbar-meatz .nav-link {
+    color: #4E2A1E !important; /* Marrom escuro da Meatz */
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.navbar-meatz .nav-link:hover {
+    color:#F5EFE6!important; /* Laranja ao passar o mouse */
+}
+
+/* Botão de Delivery */
+.btn-delivery-header {
+    background-color:#4E2A1E; /* Fundo Marrom */
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px; /* Formato de pílula igual ao da imagem */
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-delivery-header:hover {
+    background-color: #4E2A1E;
+    transform: scale(1.05);
+}
+
+/* Ajuste para Mobile */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .btn-delivery-header {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    #sobre {
+        margin-top: 20px;
+    }
+}
+
+/* ============================================================
+   3. BOTÃO "PEÇA AGORA"
+   ============================================================ */
+.btn-pede-agora {
+    background-color: var(--laranja-meatz);
+    color: white;
+    padding: 16px 45px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(242, 146, 53, 0.3);
+}
+
+.btn-pede-agora:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(242, 146, 53, 0.5);
+    color: white;
+}
+
+/* ============================================================
+   4. CARDÁPIO (PRODUTOS)
+   ============================================================ */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--creme-card);
+    transition: 0.4s;
+    height: 100%;
+}
+
+.custom-card:hover { transform: translateY(-10px); }
+
+.card-img-top-bg {
+    background-color:#4A1D11;;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* AJUSTADO: Garante que o burger apareça completo */
+.card-img-top-bg img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    background-color: var(--creme-card);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title { color: var(--marrom-texto); font-weight: 800; text-transform: uppercase; }
+
+/* ============================================================
+   5. SEÇÃO IFOOD (Ajuste de Proximidade)
+   ============================================================ */
+.cta-section .container div {
+    max-width: fit-content; /* Faz o container envolver apenas o conteúdo */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o bloco todo na tela */
+}
+
+.cta-text {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 0;
+    white-space: wrap; /* Evita que o texto quebre em telas médias */
+    color: var(--preto-suave);
+}
+
+.btn-dark-custom {
+    background-color: var(--preto-puro);
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.btn-dark-custom:hover {
+    background-color: #333;
+    color: var(--laranja-meatz);
+}
+
+/* ============================================================
+   6. QUEM SOMOS
+   ============================================================ */
+.card-custom {
+    background-color: var(--laranja-meatz) !important;
+    border-radius: 50px !important;
+    border: none;
+    overflow: hidden;
+}
+
+.img-container img {
+    border-radius: 40px !important;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.titulo-secao {
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 0.9;
+    color:  #4A1D11;
+}
+
+.paragrafo-meatz { font-size: 1.15rem; color: #000; font-weight: 500; }
+
+/* ============================================================
+   7. VÍDEOS E CONTATOS (ÚLTIMA PARTE)
+   ============================================================ */
+.video-grid-item {
+    position: relative;
+    padding-top: 100%;
+    background-color: var(--preto-suave);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-grid-item video {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+/* AJUSTADO: Rodapé com fundo laranja e escrita preta */
+.contact-card {
+    background-color: var(--laranja-meatz); /* FUNDO LARANJA */
+    color: #4A1D11; /* ESCRITA PRETA */
+    border-radius: 20px;
+    padding: 30px !important;
+    border: none;
+}
+
+.contact-card h3 {
+    color:  #4A1D11;
+    font-weight: 800;
+}
+
+.contact-info-item span {
+    color: #4A1D11;
+}
+
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+   
+}
+
+/* ============================================================
+   8. ANIMAÇÕES
+   ============================================================ */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* DELAY ESCALONADO */
+.row .scroll-reveal:nth-child(1) { transition-delay: 0.1s; }
+.row .scroll-reveal:nth-child(2) { transition-delay: 0.3s; }
+.row .scroll-reveal:nth-child(3) { transition-delay: 0.5s; }
+.row .scroll-reveal:nth-child(4) { transition-delay: 0.7s; }
+
+@media (max-width: 768px) {
+    .titulo-secao { font-size: 2.2rem; text-align: center; }
+    .cta-text { font-size: 1.1rem; text-align: center; margin-bottom: 15px; }
+    .btn-dark-custom { width: 100%; justify-content: center; }
+}
+/* Ativa o deslize suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos do Footer */
+.footer-meatz {
+    background-color:#F29235;;
+    color: #4A1D11;;
+}
+.footer-title {
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: #4A1D11;
+}
+.footer-links a {
+    color: #4A1D11;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.footer-links a:hover {
+    color: #F29235;
+    padding-left: 5px;
+}
+.social-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #4A1D11;
+    color: white !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Compensa a altura da barra de navegação para não cortar o título */
+:target {
+    scroll-margin-top: 100px;
+}
