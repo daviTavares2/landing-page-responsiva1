@@ -1,4 +1,4 @@
-Com certeza! Um bom README é a vitrine do seu projeto. Ele precisa ser visual, organizado e direto ao ponto para quem visita o seu GitHub.
+
 
 Aqui está uma proposta estruturada, moderna e com ícones para valorizar o seu trabalho:
 
