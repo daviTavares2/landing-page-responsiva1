@@ -1,6 +1,6 @@
 
 
-Aqui está uma proposta estruturada, moderna e com ícones para valorizar o seu trabalho:
+
 
 🍔 Hamburgueria Dev - Sistema de Pedidos Online
 Uma interface moderna, rápida e responsiva para facilitar o atendimento da sua hamburgueria.
