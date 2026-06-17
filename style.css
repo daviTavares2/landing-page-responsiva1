@@ -1,3 +1,5 @@
+
+
 /* ============================================================
    1. VARIÁVEIS E CONFIGURAÇÕES BASE
    ============================================================ */
@@ -10,6 +12,10 @@
     --preto-puro: #000000;
     --preto-suave: #1a1a1a;
     --espacamento-secao: 50px; 
+}
+
+#nav_logo{
+    color: var(--marrom-texto);
 }
 
 body {
